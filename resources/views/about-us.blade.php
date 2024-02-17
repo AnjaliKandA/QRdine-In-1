@@ -14,7 +14,7 @@
             <div class="col-md-12 mt-3">
                 <div class="card mt-3">
                     <div class="card-body text-center">
-                        {!! \App\Model\BusinessSetting::where(['key'=>'about_us'])->first()->value !!}
+                        {!! \App\Model\BusinessSetting::where(['key' => 'about'])->first()->value !!}
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
 
 @push('script')
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             document.getElementsByClassName("ql-editor")[0].contentEditable = "false";
         });
     </script>
