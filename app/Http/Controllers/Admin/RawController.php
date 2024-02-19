@@ -17,7 +17,7 @@ class RawController extends Controller
         $search = $request->input('search');
 
         $orderQuery = Raw::query();
-
+        // dd($orderQuery);
         if ($search) {
             $orderQuery->where(function ($q) use ($search) {
                 foreach (explode(' ', $search) as $value) {
